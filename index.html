@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Container Fluid Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      padding-top: 70px; /* to prevent overlap */
+      background-color: #D3D3D3; /* light gray */
+      color: #343a40; /* default text color */
+    }
+    .btn-secondary {
+      background-color: #77a8ed; /* custom blue */
+      border-color: #ffffff;
+    }
+    .btn-secondary:hover {
+      background-color: #343a40; /* darker on hover */
+    }
+    .header-banner {
+      background-color: #f8f9fa; /* bs light background */
+      border-radius: 0.3rem;
+      margin-bottom: 5rem; /* spacing below the banner */
+      padding: 2rem; /* internal spacing */
+    }
+    .d-flex p{
+      font-size:125%;
+    }
+    #title {
+      background-color: #77a8ed; /* matching button color */
+      padding: 1rem;
+      margin: 1rem 0;
+      color: white;
+    }
+    .black-text {
+      color: black; /* black text color for titles */
+    }
+  </style>
+</head>
+<body>
+  
+<div class="container-fluid">
+  <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" role="navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my_nav-content" aria-controls="my_nav-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Brand -->
+    <a class="navbar-brand" href="https://www.uma.edu" target="_blank">
+      <img src="images/logo.png" alt="UMA Logo"> UMA
+    </a>
+    <!-- Links and Search Form -->
+    <div class="collapse navbar-collapse" id="my_nav-content">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="http://cis.uma.edu" target="_blank">CIS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php" target="_blank">Home</a>
+        </li>
+      </ul>
+      <!-- Search form moved to the right -->
+      <form class="d-flex ms-auto" action="#">
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- Header Banner -->
+  <div class="header-banner text-bg-light rounded mb-5">
+    <div id="title" class="p-3">
+      <h1 class="text-center black-text">The Internship Experience</h1>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center">
+      <div class="col-md-6 col-12">
+        <p>The Internship Experience is an elective 3-credit information technology (IT) offering at the associate-degree level and a required offering at the bachelor-degree level that provides the student with an opportunity to build a professional portfolio of relevant work experience. With the guidance of an organizational mentor, students will develop a significant IT project that applies appropriate information Technology (IT) skills in hardware/networking,database design and development,programing, or client-server-side Web scripting. The internship is offered at three levels: CIS380, and CIS480.</p>
+       <p><a href="#" target="_self" class="btn btn-secondary btn-1g">View Internship Handbook</a> </a></p>    
+      </div>
+      <div class="col-md-6 col-12 ">
+        <div class="flex-items">
+        <a href="https://www.thebluediamondgallery.com/handwriting/i/internship.html">
+          <img src="images/internship.jpg" class="rounded img-fluid" alt="Internship Image" />
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
